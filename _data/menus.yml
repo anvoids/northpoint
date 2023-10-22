@@ -6,7 +6,7 @@ topmenu:
 
 - title: About
   url: "about/"
-  sublinks:
+  submenu:
       - title: "Text goes here"
         url: "#"
       - title: "Text goes here"
