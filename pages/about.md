@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: "/about/"
+title: Our town
+permalink: "/town/"
 image: assets/images/screenshot.png
 ---
 
