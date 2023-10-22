@@ -4,18 +4,11 @@ topmenu:
 - title: Home
   url: ""
 
-- title: About
-  url: "about/"
-  submenu:
-      - title: "Text goes here"
-        url: "#"
-      - title: "Text goes here"
-        url: "#"
-      - title: "Text goes here"
-        url: "#"
+- title: Our town
+  url: "town/"
 
-- title: Contact
-  url: "contact/"
+- title: Sustainability
+  url: "sustainability/"
 
 # Footer Menu
 footermenu:
@@ -28,7 +21,3 @@ footermenu:
 
 - title: Contact
   url: "contact/"
-
-- title: Download
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/  
-  external: true

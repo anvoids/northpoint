@@ -2,7 +2,7 @@
 layout: page
 title: Our town
 permalink: "/town/"
-image: assets/images/screenshot.png
+image: assets/images/slide1.png
 ---
 
 This website is a demonstration to see **Affiliates Jekyll theme** in action. 

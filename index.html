@@ -9,7 +9,6 @@ background: '/img/bg-index.jpg'
 {% if page.url == "/" %} 
 
 <div class="swiper rounded mb-5">
-  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide align-items-center p-5" style="background-image: url('/northpoint/assets/images/slide1.png'); background-size:cover;">
@@ -19,19 +18,27 @@ background: '/img/bg-index.jpg'
         <a href="{{site.baseurl}}/town" class="btn btn-dark text-white px-5 btn-lg">Our town</a>
       </div>
     </div>
-    <div class="swiper-slide align-items-center p-5 justify-content-between">Slide 2</div>
-    <div class="swiper-slide align-items-center p-5 justify-content-between">Slide 3</div>
-    ...
+    <div class="swiper-slide align-items-center p-5" style="background-image: url('/northpoint/assets/images/slide2.png'); background-size:cover;">
+      <div class="col-md-6">
+        <h1 class="font-weight-bold mb-4 serif-font">New bus terminal</h1>
+        <p class="lead mb-4">The newest bus terminal in our municipality has just opened. Located by the sea, not only offers great accessiblity to passengers but also a great view. North Point is now more accessible</p>
+        <a href="{{site.baseurl}}/new-bus-terminal" class="btn btn-dark text-white px-5 btn-lg">Learn more</a>
+      </div>
+    </div>
+    <div class="swiper-slide align-items-center p-5" style="background-image: url('/northpoint/assets/images/slide3.png'); background-size:cover;">
+      <div class="col-md-6">
+        <h1 class="font-weight-bold mb-4 serif-font">Our commitment</h1>
+        <p class="lead mb-4">In an era of growing environmental awareness, we hope to emerge as an example of commitment to environmental conservation and sustainability.</p>
+        <a href="{{site.baseurl}}/sustainability" class="btn btn-dark text-white px-5 btn-lg">Sustainability</a>
+      </div>
+    </div>
   </div>
-  <!-- If we need pagination -->
+
   <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
 </div>
 <div class="rounded mb-5 hero">
   <div class="row align-items-center justify-content-between">
