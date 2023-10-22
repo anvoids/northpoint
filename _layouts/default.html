@@ -1,134 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="{{ site.baseurl }}/{{site.favicon}}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="{{ site.baseurl }}/{{site.favicon}}">
 
-<title>{{ page.title }} | {{site.title}}</title>
+  <title>{{ page.title }} | {{site.title}}</title>
 
-{% seo %}
+  {% seo %}
 
-<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
 
-<!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
-<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
-<!-- custom CSS end-->
-    
-{% if jekyll.environment == "production" %}       
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '{{site.ganalytics}}');
-</script>
-{% endif %}
-   
-</head>   
-    
+  <!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
+  <link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+  <!-- custom CSS end-->
+
+  {% if jekyll.environment == "production" %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{site.ganalytics}}');
+  </script>
+  {% endif %}
+
+</head>
+
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
 <body class="{{ layout }}">
 
-<!-- Menu Navigation
+  <!-- Menu Navigation
 ================================================== -->
-<div class="navigation-wrap start-header start-style">
+  <div class="navigation-wrap start-header start-style">
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
+      <div class="container">
 
-          <a class="navbar-brand text-dark font-weight-bold big d-flex align-items-center" href="{{site.baseurl}}/">
+        <a class="navbar-brand text-dark font-weight-bold big d-flex align-items-center" href="{{site.baseurl}}/">
           {% if site.logo %}
-          <img class="mr-2" height="40" width="40" src="{{site.baseurl}}/{{site.logo}}" alt="logo"> 
+          <img class="mr-2" height="40" width="40" src="{{site.baseurl}}/{{site.logo}}" alt="logo">
           {% else %}
           <span class="d-none d-md-inline-block">{{ site.title }}</span>
           {% endif %}
-          </a> | 
-          
+        </a> |
 
-          <div class="d-flex align-items-center">
-            
-            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.discord}}">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-                <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
-              </svg>
-            </a>
 
-          </div>
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+        <div class="d-flex align-items-center">
+
+          <a class="d-inline-block social-icon" target="_blank" href="{{site.social.discord}}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-discord"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
             </svg>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
-              {% for item in site.data.menus.topmenu %}
-              <li class="nav-item">
-                <a class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
+          </a>
 
         </div>
-      </nav>
-    </div>  
 
-    
-<!-- Container
-================================================== -->    
-<main class="container">   
-      {{ content }}  
-</main>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path
+              d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+          </svg>
+        </button>
 
-<!-- Footer
-================================================== -->    
-<footer class="footer container text-center">  
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+            {% for item in site.data.menus.topmenu %}
+            <li class="nav-item">
+              <a class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}"
+                href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
+                alt="{{item.title}}">{{item.title}}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
 
-  <ul class="p-0 mb-1 small">
-    {% for item in site.data.menus.footermenu %}
-    <li>
-      <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
-    </li>
-    {% endfor %}
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- Container
+================================================== -->
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <!-- Footer
+================================================== -->
+  <footer class="footer container text-center">
+
+    <ul class="p-0 mb-1 small">
+      {% for item in site.data.menus.footermenu %}
+      <li>
+        <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
+          alt="{{item.title}}">{{item.title}}</a>
+      </li>
+      {% endfor %}
     </ul>
     <div class="copyright small">
-       Copyright © {{site.title}}. All rights reserved. | <a href="https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/">Affiliates Theme</a>
+      Copyright © {{site.title}}. All rights reserved. | <a
+        href="https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/">Affiliates Theme</a>
     </div>
-</footer>
+  </footer>
 
-<!-- JavaScript
-================================================== -->    
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>   
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>   
-<script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-  effect: 'fade',
+  <!-- JavaScript
+================================================== -->
+  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-  autoplay: {
+      autoplay: {
         delay: 4000,
         disableOnInteraction: false,
       },
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  
-});
-</script>
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+  </script>
 </body>
-    
+
 </html>
