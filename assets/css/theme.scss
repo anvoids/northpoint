@@ -627,9 +627,9 @@ span.navigation:before {
 
 .swiper-slide {
     background-size: cover;
-    height: auto;
+    height: auto !important;
 }
 
 .swiper-wrapper {
-    height: auto;
+    height: auto !important;
 }
