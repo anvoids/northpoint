@@ -4,8 +4,20 @@ topmenu:
 - title: Home
   url: ""
 
-- title: Our town
+- title: Visit
+  url: "visit/"
+
+- title: Town
   url: "town/"
+
+- title: Education
+  url: "education/"
+
+- title: Business
+  url: "business/"
+
+- title: Health & Safety
+  url: "safety/"
 
 - title: Sustainability
   url: "sustainability/"
