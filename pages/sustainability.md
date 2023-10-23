@@ -5,7 +5,7 @@ permalink: "/sustainability/"
 image: assets/images/slide1.png
 ---
 
-North Point has embarked on an ambitious journey to become the most sustainable town in the Baseplate region. With a strong commitment to preserving its natural beauty and fostering a healthier environment for its residents, the town has set in motion a series of innovative initiatives that underscore its dedication to sustainability. Here's a list of what we've done so far.
+North Point has embarked on an ambitious journey to become the most sustainable town in the Main Island region. With a strong commitment to preserving its natural beauty and fostering a healthier environment for its residents, the town has set in motion a series of innovative initiatives that underscore its dedication to sustainability. Here's a list of what we've done so far.
 
 ---
 ### Energy efficiency
