@@ -6,7 +6,7 @@ comments: false
 ---
 
 ### Information that is gathered from visitors
-In common with other websites, log files are stored on the web server saving details such as the visitor's IP address, browser type, referring page and time of visit.
+In common with other websites, log files are stored on the web server (GitHub Pages) saving details such as the visitor's IP address, browser type, referring page and time of visit, we do not have access to these.
 
 Cookies may be used to remember visitor preferences when interacting with the website.
 
