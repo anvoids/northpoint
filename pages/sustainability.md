@@ -9,7 +9,7 @@ North Point has embarked on an ambitious journey to become the most sustainable 
 
 ---
 ### Energy efficiency
-One of North Point's primary objectives is to reduce its carbon footprint significantly. The town has initiated a comprehensive remodeling of public transportation infrastructures such as the creation of a [new bus terminal](/new-bus-terminal/) powered by solar energy, which will not only reduce congestion from people using the buses, but also lower emissions. Moreover, the town has invested in energy-efficient public buildings, street lighting, and renewable energy sources to reduce energy consumption and promote cleaner power generation.
+One of North Point's primary objectives is to reduce its carbon footprint significantly. The town has initiated a comprehensive remodeling of public transportation infrastructures such as the creation of a [new bus terminal](/northpoint/new-bus-terminal/) powered by solar energy, which will not only reduce congestion from people using the buses, but also lower emissions. Moreover, the town has invested in energy-efficient public buildings, street lighting, and renewable energy sources to reduce energy consumption and promote cleaner power generation.
 
 ### Natural preservation
 North Point is also committed to preserving its natural surroundings. The town has designated vast areas of green space and forests as protected areas, ensuring they remain untouched for generations to come. Local community groups and schools are actively involved in tree-planting initiatives, helping to rejuvenate the town's green spaces and create a cleaner, healthier environment.
