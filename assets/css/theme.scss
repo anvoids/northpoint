@@ -622,3 +622,12 @@ span.navigation:before {
     transition: all.3s;
     opacity:.8;
 }
+
+/* Swiper */
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
